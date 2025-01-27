@@ -6,9 +6,7 @@ def train_model(train, train_submission):
     """
     Entraîner un modèle Random Forest
     """
-    model = RandomForestClassifier(n_estimators=100,
-                                   max_depth=5,
-                                   random_state=1)
+    model = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=1)
     model.fit(train, train_submission)
     return model
 
@@ -30,13 +28,10 @@ if __name__ == "__main__":
     train_path = "train.csv"
     test_path = "test.csv"
     train_data, test_data = tel_data(train_path, test_path)
-    features = ["Pclass", "Sex",
-                "SibSp", "Parch"]
+    features = ["Pclass", "Sex", "SibSp", "Parch"]
 
     # Première fonction
-    train, test, train_submission = preprocess_data(train_data,
-                                               test_data,
-                                               features)
+    train, test, train_submission = preprocess_data(train_data, test_data, features)
 
     # Deuxième fonction
     model = train_model(train, train_submission)

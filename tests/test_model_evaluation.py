@@ -1,4 +1,3 @@
-import pytest
 import pandas as pd
 import joblib
 from sklearn.ensemble import RandomForestClassifier
@@ -24,9 +23,9 @@ def test_tel_model(tmp_path):
     assert isinstance(
         loaded_model, RandomForestClassifier
     ), "Le modèle chargé doit être une instance de RandomForestClassifier"
-    assert loaded_model.n_estimators == 10, (
-        "Le modèle chargé doit avoir le bon paramètre n_estimators"
-    )
+    assert (
+        loaded_model.n_estimators == 10
+    ), "Le modèle chargé doit avoir le bon paramètre n_estimators"
 
 
 def test_gener_submission(tmp_path):
@@ -56,15 +55,16 @@ def test_gener_submission(tmp_path):
     output = pd.read_csv(output_path)
 
     # Vérifications
-    assert "PassengerId" in output.columns, (
-        "Le fichier de sortie doit contenir une colonne PassengerId"
-    )
-    assert "Survived" in output.columns, (
-        "Le fichier de sortie doit contenir une colonne Survived"
-    )
-    assert list(output["PassengerId"]) == [1, 2], (
-        "Les PassengerId doivent correspondre aux données test"
-    )
-    assert list(output["Survived"]) == list(predictions), (
-        "Les prédictions doivent correspondre aux résultats du modèle"
-    )
+    assert (
+        "PassengerId" in output.columns
+    ), "Le fichier de sortie doit contenir une colonne PassengerId"
+    assert (
+        "Survived" in output.columns
+    ), "Le fichier de sortie doit contenir une colonne Survived"
+    assert list(output["PassengerId"]) == [
+        1,
+        2,
+    ], "Les PassengerId doivent correspondre aux données test"
+    assert list(output["Survived"]) == list(
+        predictions
+    ), "Les prédictions doivent correspondre aux résultats du modèle"

@@ -1,5 +1,4 @@
 import os
-import pytest
 from sklearn.ensemble import RandomForestClassifier
 from src.model_training import train_model, save_model
 
@@ -16,12 +15,12 @@ def test_train_model():
     model = train_model(train, train_submission)
 
     # Vérifications
-    assert isinstance(model, RandomForestClassifier), (
-        "Le modèle doit être une instance de RandomForestClassifier"
-    )
-    assert hasattr(model, "predict"), (
-        "Le modèle entraîné doit avoir une méthode 'predict'"
-    )
+    assert isinstance(
+        model, RandomForestClassifier
+    ), "Le modèle doit être une instance de RandomForestClassifier"
+    assert hasattr(
+        model, "predict"
+    ), "Le modèle entraîné doit avoir une méthode 'predict'"
     assert model.n_estimators == 100, "Le modèle doit utiliser 100 arbres"
     assert model.max_depth == 5, "La profondeur maximale du modèle doit être 5"
 
