@@ -34,7 +34,9 @@ if __name__ == "__main__":
 
     # Prétraiter les données
     features = ["Pclass", "Sex", "SibSp", "Parch"]
-    train, test, train_submission = preprocess_data(train_data, test_data, features)
+    train, test, train_submission = preprocess_data(train_data,
+                                                    test_data,
+                                                    features)
 
     # Charger le modèle
     model_path = "random_forest_model.pkl"
