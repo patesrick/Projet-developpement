@@ -1,5 +1,5 @@
 import pandas as pd
-from src.data_preprocessing import tel_data, preprocess_data  # Adaptez l'import à votre structure de projet
+from src.data_preprocessing import tel_data, preprocess_data
 
 
 def test_tel_data(tmp_path):
