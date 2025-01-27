@@ -14,8 +14,38 @@ L'objectif principal est de mettre en pratique les **bonnes pratiques d'ingénie
 - L'utilisation de **Git/GitHub** pour collaborer efficacement en équipe.
 - La configuration d’un pipeline **CI/CD** avec **GitHub Actions** pour automatiser les tests, le linting et, éventuellement, le déploiement.
 
+---
+
+Titanic-Survival-Prediction/
+│
+├── data/                 # Données brutes (fichiers Kaggle)
+├── src/                  # Scripts Python modulaires
+│   ├── data_preprocessing.py  # Prétraitement des données
+│   ├── model_training.py      # Entraînement du modèle
+│   ├── model_evaluation.py    # Évaluation des performances
+│   ├── main.py                # Script principal
+│
+├── tests/               # Tests unitaires avec pytest
+│   ├── test_data_preprocessing.py
+│   ├── test_model_training.py
+│
+├── docs/                # Documentation
+│   ├── README.md        # Ce fichier
+│   ├── CONTRIBUTING.md  # Guide pour les contributeurs
+│
+├── .github/             # Configuration du pipeline CI/CD
+│   ├── workflows/       # Workflows GitHub Actions
+│       ├── ci.yml       # Linting, tests et vérifications
+│
+├── Dockerfile           # Optionnel : Configuration Docker
+├── requirements.txt     # Liste des dépendances
+├── pyproject.toml       # Configuration de Poetry
+├── LICENSE              # Licence du projet
+└── README.md            # Documentation principale
 
 ---
+
+
 
 ## **Instructions d'installation des packages**
 
