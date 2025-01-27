@@ -58,35 +58,7 @@ Projet-developpement/
 
 
 
-## **Instructions d'installation des packages**
-
-Ce projet repose sur plusieurs bibliothèques Python essentielles. Voici une description des dépendances utilisées et leur rôle dans le projet :
-
-### **Bibliothèques utilisées**
-
-- **`pandas`** :
-  - Librairie incontournable pour la manipulation et l'analyse des données.
-  - Utilisée pour charger, nettoyer et transformer les données issues des fichiers CSV (données d'entraînement et de test).
-
-- **`joblib`** :
-  - Outil performant pour la sauvegarde et le chargement d'objets Python.
-  - Utilisé pour enregistrer les modèles entraînés et les recharger pour l'évaluation ou la prédiction.
-
-- **`scikit-learn`** :
-  - Librairie phare pour l'apprentissage automatique en Python.
-  - Fournit des algorithmes de machine learning, comme le modèle **Random Forest**, utilisé pour prédire les chances de survie des passagers.
-
-- **`pytest`** :
-  - Framework dédié à l’écriture et à l’exécution de tests unitaires.
-  - Permet de vérifier la fiabilité du code en testant les fonctions principales du projet.
-
-
-
----
-
-
-
-### **Contribution des membres**
+## **Contribution des membres**
 
 4 membres se sont départagés les tâches du projet. Voici une description de ce qu'a fait chaque membre du groupe :
 
@@ -122,7 +94,35 @@ Ce projet repose sur plusieurs bibliothèques Python essentielles. Voici une des
 
 
 
-### **Installation des dépendances**
+## **Instructions d'installation des packages**
+
+Ce projet repose sur plusieurs bibliothèques Python essentielles. Voici une description des dépendances utilisées et leur rôle dans le projet :
+
+### **Bibliothèques utilisées**
+
+- **`pandas`** :
+  - Librairie incontournable pour la manipulation et l'analyse des données.
+  - Utilisée pour charger, nettoyer et transformer les données issues des fichiers CSV (données d'entraînement et de test).
+
+- **`joblib`** :
+  - Outil performant pour la sauvegarde et le chargement d'objets Python.
+  - Utilisé pour enregistrer les modèles entraînés et les recharger pour l'évaluation ou la prédiction.
+
+- **`scikit-learn`** :
+  - Librairie phare pour l'apprentissage automatique en Python.
+  - Fournit des algorithmes de machine learning, comme le modèle **Random Forest**, utilisé pour prédire les chances de survie des passagers.
+
+- **`pytest`** :
+  - Framework dédié à l’écriture et à l’exécution de tests unitaires.
+  - Permet de vérifier la fiabilité du code en testant les fonctions principales du projet.
+
+
+
+---
+
+
+
+## **Installation des dépendances**
 
 #### **Pré-requis**
 Assurez-vous d’avoir installé **Python 3.8** ou une version ultérieure.
