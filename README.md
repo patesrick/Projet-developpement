@@ -48,7 +48,7 @@ Titanic-Survival-Prediction/
 ├── pyproject.toml             # Configuration de Poetry
 ├── LICENSE                    # Licence du projet
 └── README.md                  # Documentation principale
-
+```
 
 ---
 
