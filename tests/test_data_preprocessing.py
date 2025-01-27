@@ -33,7 +33,8 @@ def test_tel_data(tmp_path):
         and "Les dimensions de train_data ne correspondent pas"
     )
     assert (
-        test_data.shape == (2, 4) and "Les dimensions de test_data ne correspondent pas"
+        test_data.shape == (2, 4)
+        and "Les dimensions de test_data ne correspondent pas"
     )
 
 
@@ -61,7 +62,9 @@ def test_preprocess_data():
     features = ["Pclass", "Sex", "SibSp", "Parch"]
 
     # Prétraiter les données
-    train, test, train_submission = preprocess_data(train_data, test_data, features)
+    train, test, train_submission = preprocess_data(train_data,
+                                                    test_data,
+                                                    features)
 
     # Vérifications avec réduction des lignes
     assert (
