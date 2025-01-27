@@ -79,11 +79,13 @@ Projet-developpement/
   - Utilisation de GIT et structuration de GITHUB
 
 - **Gaspard LUGAT** :
+  - Familiarisation avec les données de départ
   - Mise en place de la pipeline CI/CD
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
 
 - **Dan SEBAG** :
+  - Familiarisation avec les données de départ
   - Écriture et rédaction du rapport final
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
