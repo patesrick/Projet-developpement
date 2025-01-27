@@ -1,24 +1,23 @@
-import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 
-def tel_model(filepath: str):
+def train_model(train, train_submission):
     """
-    Charger le modèle sauvegardé
+    Entraîner un modèle Random Forest
     """
-    return joblib.load(filepath)
-
-
-def gener_submission(model, test, test_data, output_path: str):
-    """
-    Créer un fichier d'évaluation du modèle
-    """
-    predictions = model.predict(test)
-    output = pd.DataFrame(
-        {"PassengerId": test_data["PassengerId"], "Survived": predictions}
+    model = RandomForestClassifier(
+        n_estimators=100, max_depth=5, random_state=1
     )
-    output.to_csv(output_path, index=False)
-    print("Fichier enregistré")
+    model.fit(train, train_submission)
+    return model
+
+
+def save_model(model, filepath: str):
+    """
+    Sauvegarder le modèle
+    """
+    joblib.dump(model, filepath)
 
 
 if __name__ == "__main__":
@@ -31,16 +30,16 @@ if __name__ == "__main__":
     train_path = "train.csv"
     test_path = "test.csv"
     train_data, test_data = tel_data(train_path, test_path)
-
-    # Prétraiter les données
     features = ["Pclass", "Sex", "SibSp", "Parch"]
-    train, test, train_submission = preprocess_data(train_data,
-                                                    test_data,
-                                                    features)
 
-    # Charger le modèle
-    model_path = "random_forest_model.pkl"
-    model = tel_model(model_path)
+    # Première fonction
+    train, test, train_submission = preprocess_data(
+        train_data, test_data, features
+    )
 
-    # Générer le fichier de soumission
-    gener_submission(model, test, test_data, "submission.csv")
+    # Deuxième fonction
+    model = train_model(train, train_submission)
+
+    # Sauvegarder le modèle
+    save_model(model, "random_forest_model.pkl")
+    print("Modèle sauvegardé")
