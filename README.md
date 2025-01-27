@@ -86,31 +86,6 @@ Ce projet repose sur plusieurs bibliothèques Python essentielles. Voici une des
 
 
 
-### **Installation des dépendances**
-
-#### **Pré-requis**
-Assurez-vous d’avoir installé **Python 3.8** ou une version ultérieure.
-
-#### **Étapes d'installation**
-1. Installez **Poetry** si ce n'est pas déjà fait :
-   ```bash
-   pip install poetry
-2. Ajoutez les dépendances principales nécessaires à l'exécution du projet :
-   ```bash
-   poetry add pandas joblib scikit-learn pytest
-3. Ajoutez les dépendances de développement pour le testing et le linting :
-   ```bash
-   poetry add --dev pytest
-4. Vérifiez que toutes les dépendances sont correctement installées :
-   ```bash
-   poetry install
-
-
-
----
-
-
-
 ### **Contribution des membres**
 
 4 membres se sont départagés les tâches du projet. Voici une description de ce qu'a fait chaque membre du groupe :
@@ -140,3 +115,28 @@ Assurez-vous d’avoir installé **Python 3.8** ou une version ultérieure.
   - Écriture et rédaction du rapport final
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
+
+
+
+---
+
+
+
+### **Installation des dépendances**
+
+#### **Pré-requis**
+Assurez-vous d’avoir installé **Python 3.8** ou une version ultérieure.
+
+#### **Étapes d'installation**
+1. Installez **Poetry** si ce n'est pas déjà fait :
+   ```bash
+   pip install poetry
+2. Ajoutez les dépendances principales nécessaires à l'exécution du projet :
+   ```bash
+   poetry add pandas joblib scikit-learn pytest
+3. Ajoutez les dépendances de développement pour le testing et le linting :
+   ```bash
+   poetry add --dev pytest
+4. Vérifiez que toutes les dépendances sont correctement installées :
+   ```bash
+   poetry install
