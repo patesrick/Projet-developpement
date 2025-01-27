@@ -34,12 +34,12 @@ if __name__ == "__main__":
                 "SibSp", "Parch"]
 
     # Première fonction
-    X_train, X_test, y_train = preprocess_data(train_data,
+    train, test, train_submission = preprocess_data(train_data,
                                                test_data,
                                                features)
 
     # Deuxième fonction
-    model = train_model(X_train, y_train)
+    model = train_model(train, train_submission)
 
     # Sauvegarder le modèle
     save_model(model, "random_forest_model.pkl")
