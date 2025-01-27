@@ -1,5 +1,4 @@
 import pandas as pd
-import pytest
 from src.data_preprocessing import tel_data, preprocess_data  # Adaptez l'import à votre structure de projet
 
 
