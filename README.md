@@ -104,3 +104,39 @@ Assurez-vous d’avoir installé **Python 3.8** ou une version ultérieure.
 4. Vérifiez que toutes les dépendances sont correctement installées :
    ```bash
    poetry install
+
+
+
+---
+
+
+
+### **Contribution des membres**
+
+4 membres se sont départagés les tâches du projet. Voici une description de ce qu'a fait chaque membre du groupe :
+
+### **Tâches**
+
+- **`Baptiste TIVRIER`** :
+  - Familiarisation avec les données de départ
+  - Écriture des différents scripts Python
+  - Tests de fonctionnement simple et des règles PEP8
+  - Co-Écriture du README
+  - Utilisation de GIT et structuration de GITHUB
+
+- **`Patrick CHEN`** :
+  - Familiarisation avec les données de départ
+  - Mise en place de la gestion des librairies
+  - Écriture des différents tests unitaires
+  - Co-Écriture du README
+  - Utilisation de GIT et structuration de GITHUB
+
+- **`Gaspard LUGAT`** :
+  - Mise en place de la pipeline CI/CD
+  - Co-Écriture du README
+  - Utilisation de GIT et structuration de GITHUB
+
+- **`Dan SEBAG`** :
+  - Écriture et rédaction du rapport final
+  - Co-Écriture du README
+  - Utilisation de GIT et structuration de GITHUB
