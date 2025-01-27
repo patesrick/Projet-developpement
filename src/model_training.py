@@ -34,8 +34,8 @@ if __name__ == "__main__":
 
     # Première fonction
     train, test, train_submission = preprocess_data(train_data,
-                                               test_data,
-                                               features)
+                                                    test_data,
+                                                    features)
 
     # Deuxième fonction
     model = train_model(train, train_submission)
