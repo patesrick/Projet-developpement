@@ -60,7 +60,7 @@ Projet-developpement/
 
 ## **Contribution des membres**
 
-4 membres se sont départagés les tâches du projet. Voici une description de ce qu'a fait chaque membre du groupe :
+4 membres se sont départagés les tâches du projet. Voici une brève description de ce qu'a fait chaque membre du groupe :
 
 ### **Tâches**
 
