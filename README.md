@@ -14,6 +14,7 @@ L'objectif principal est de mettre en pratique les **bonnes pratiques d'ingénie
 - L'utilisation de **Git/GitHub** pour collaborer efficacement en équipe.
 - La configuration d’un pipeline **CI/CD** avec **GitHub Actions** pour automatiser les tests, le linting et, éventuellement, le déploiement.
 
+
 ---
 
 ## **Instructions d'installation des packages**
