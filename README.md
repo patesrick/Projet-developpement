@@ -14,7 +14,11 @@ L'objectif principal est de mettre en pratique les **bonnes pratiques d'ingénie
 - L'utilisation de **Git/GitHub** pour collaborer efficacement en équipe.
 - La configuration d’un pipeline **CI/CD** avec **GitHub Actions** pour automatiser les tests, le linting et, éventuellement, le déploiement.
 
+
+
 ---
+
+
 
 ## **Organisation des fichiers et dossiers du projet**
 
@@ -23,32 +27,32 @@ Comme dit précemmdent, ce projet vise à prédire les chances de survie des pas
 ```plaintext
 Projet-developpement/
 │
-├── data/                      # Données brutes (fichiers Kaggle)
+├── docs/                            # Documentation principale
+│   ├── README.md                    # Documentation du projet
+│   ├── rapport.pdf                  # Rapport du projet
+|
+├── src/                             # Scripts Python modulaires & Données Brutes
+│   ├── __pycache__/                 # Fichiers compilés Python
+│   ├── __init__.py                  # Indique que src est un package Python
+│   ├── data_preprocessing.py        # Prétraitement des données
+│   ├── model_evaluation.py          # Évaluation des performances
+│   ├── model_training.py            # Entraînement du modèle
+│   ├── train.csv                    # Données d'entraînement
+│   ├── test.csv                     # Données de test
 │
-├── src/                       # Scripts Python modulaires
-│   ├── data_preprocessing.py  # Prétraitement des données
-│   ├── model_training.py      # Entraînement du modèle
-│   ├── model_evaluation.py    # Évaluation des performances
-│   ├── main.py                # Script principal
+├── tests/                           # Tests unitaires avec pytest
+│   ├── __pycache__/                 # Fichiers compilés Python
+│   ├── __init__.py                  # Indique que tests est un package Python
+│   ├── test_data_preprocessing.py   # Tests pour le prétraitement des données
+│   ├── test_model_evaluation.py     # Tests pour l'évaluation du modèle
+│   ├── test_model_training.py       # Tests pour l'entraînement du modèle
 │
-├── tests/                     # Tests unitaires avec pytest
-│   ├── test_data_preprocessing.py
-│   ├── test_model_training.py
-│
-├── docs/                      # Documentation
-│   ├── README.md              # Documentation du projet
-│   ├── CONTRIBUTING.md        # Guide pour les contributeurs
-│
-├── .github/                   # Configuration du pipeline CI/CD
-│   ├── workflows/
-│       ├── ci.yml             # Linting, tests et vérifications
-│
-├── Dockerfile                 # Optionnel : Configuration Docker
-├── requirements.txt           # Liste des dépendances
-├── pyproject.toml             # Configuration de Poetry
-├── LICENSE                    # Licence du projet
-└── README.md                  # Documentation principale
+├── README.md                        # Documentation du projet
+├── poetry.lock                      # Fichier de verrouillage des dépendances (Poetry)
+├── pyproject.toml                   # Configuration de Poetry
 ```
+
+
 
 ---
 
@@ -76,9 +80,13 @@ Ce projet repose sur plusieurs bibliothèques Python essentielles. Voici une des
   - Framework dédié à l’écriture et à l’exécution de tests unitaires.
   - Permet de vérifier la fiabilité du code en testant les fonctions principales du projet.
 
+
+
 ---
 
-### **1. Installation des dépendances**
+
+
+### **Installation des dépendances**
 
 #### **Pré-requis**
 Assurez-vous d’avoir installé **Python 3.8** ou une version ultérieure.
