@@ -16,9 +16,9 @@ L'objectif principal est de mettre en pratique les **bonnes pratiques d'ingénie
 
 ---
 
-# Titanic Survival Prediction
+## **Organisation des fichiers et dossiers du projet**
 
-Ce projet vise à prédire les chances de survie des passagers du Titanic en utilisant des modèles de machine learning. Voici l'organisation des fichiers et dossiers du projet :
+Comme dit précemmdent, ce projet vise à prédire les chances de survie des passagers du Titanic en utilisant des modèles de machine learning. Voici la structure de l'organisation des fichiers et dossiers de ce travail :
 
 ```plaintext
 Titanic-Survival-Prediction/
