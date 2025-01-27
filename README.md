@@ -37,6 +37,7 @@ Projet-developpement/
 │   ├── data_preprocessing.py        # Prétraitement des données
 │   ├── model_evaluation.py          # Évaluation des performances
 │   ├── model_training.py            # Entraînement du modèle
+│   ├── submission.csv               # Export du modèle évalué
 │   ├── train.csv                    # Données d'entraînement
 │   ├── test.csv                     # Données de test
 │
