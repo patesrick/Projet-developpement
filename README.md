@@ -3,8 +3,8 @@
 ## **Contexte et Objectif du Projet**
 
 Ce projet vise à transformer un notebook Python existant, tiré du célèbre projet **Titanic Survival Prediction** sur Kaggle, en un ensemble de scripts Python modulaires, bien structurés et réutilisables.
-Le projet **Titanic Survival Prediction** se présente en plusieurs étapes, notamment :
-- La préparation et l'analyse des données.
+Le projet **Titanic Survival Prediction** se présente en plusieurs étapes fondamentales, notamment :
+- Le nettoyage, la préparation et l'analyse des données.
 - La réalisation d'une analyse exploratoire (EDA).
 - Le développement d'un modèle d'apprentissage automatique (ML) capable de prédire les probabilités de survie des passagers du Titanic.
 
