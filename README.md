@@ -64,26 +64,26 @@ Projet-developpement/
 
 ### **Tâches**
 
-- **`Baptiste TIVRIER`** :
+- **Baptiste TIVRIER** :
   - Familiarisation avec les données de départ
   - Écriture des différents scripts Python
   - Tests de fonctionnement simple et des règles PEP8
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
 
-- **`Patrick CHEN`** :
+- **Patrick CHEN** :
   - Familiarisation avec les données de départ
   - Mise en place de la gestion des librairies
   - Écriture des différents tests unitaires
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
 
-- **`Gaspard LUGAT`** :
+- **Gaspard LUGAT** :
   - Mise en place de la pipeline CI/CD
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
 
-- **`Dan SEBAG`** :
+- **Dan SEBAG** :
   - Écriture et rédaction du rapport final
   - Co-Écriture du README
   - Utilisation de GIT et structuration de GITHUB
