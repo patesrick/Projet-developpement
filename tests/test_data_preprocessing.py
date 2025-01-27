@@ -20,8 +20,14 @@ def test_tel_data(tmp_path):
     train_data, test_data = tel_data(str(train_csv), str(test_csv))
 
     # Vérifications avec réduction des lignes
-    assert isinstance(train_data, pd.DataFrame) and "train_data doit être un DataFrame"
-    assert isinstance(test_data, pd.DataFrame) and "test_data doit être un DataFrame"
+    assert (
+        isinstance(train_data, pd.DataFrame)
+        and "train_data doit être un DataFrame"
+    )
+    assert (
+        isinstance(test_data, pd.DataFrame)
+        and "test_data doit être un DataFrame"
+    )
     assert (
         train_data.shape == (2, 5)
         and "Les dimensions de train_data ne correspondent pas"
@@ -46,7 +52,11 @@ def test_preprocess_data():
         }
     )
     test_data = pd.DataFrame(
-        {"Pclass": [3, 1], "Sex": ["male", "female"], "SibSp": [0, 1], "Parch": [0, 2]}
+        {
+            "Pclass": [3, 1],
+            "Sex": ["male", "female"],
+            "SibSp": [0, 1],
+            "Parch": [0, 2]}
     )
     features = ["Pclass", "Sex", "SibSp", "Parch"]
 
@@ -54,8 +64,14 @@ def test_preprocess_data():
     train, test, train_submission = preprocess_data(train_data, test_data, features)
 
     # Vérifications avec réduction des lignes
-    assert isinstance(train, pd.DataFrame) and "train doit être un DataFrame"
-    assert isinstance(test, pd.DataFrame) and "test doit être un DataFrame"
+    assert (
+        isinstance(train, pd.DataFrame)
+        and "train doit être un DataFrame"
+    )
+    assert (
+        isinstance(test, pd.DataFrame)
+        and "test doit être un DataFrame"
+    )
     assert (
         isinstance(train_submission, pd.Series)
         and "train_submission doit être un Series"
