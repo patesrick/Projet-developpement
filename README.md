@@ -26,10 +26,12 @@ Comme dit précedemment, ce projet vise à prédire les chances de survie des pa
 
 ```plaintext
 Projet-developpement/
+|
+├── .github/                         # Dossier de la pipeline
+│   ├── main.yml                     # Fichier de la pipeline
 │
 ├── docs/                            # Documentation principale
 │   ├── README.md                    # Documentation du projet
-│   ├── rapport.pdf                  # Rapport du projet
 |
 ├── src/                             # Scripts Python modulaires & Données Brutes
 │   ├── __pycache__/                 # Fichiers compilés Python
