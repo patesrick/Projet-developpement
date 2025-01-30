@@ -10,9 +10,7 @@ def tel_data(train_path: str, test_path: str):
     return train_data, test_data
 
 
-def preprocess_data(train_data: pd.DataFrame,
-                    test_data: pd.DataFrame,
-                    features: list):
+def preprocess_data(train_data: pd.DataFrame, test_data: pd.DataFrame, features: list):
     """
     Préparer les données pour l'entraînement et la prédiction :
     - Mettre les colonnes catégoriques au numérique
@@ -31,16 +29,13 @@ if __name__ == "__main__":
     # Charger les données
     train_test = "train.csv"
     test_test = "test.csv"
-    features = ["Pclass", "Sex",
-                "SibSp", "Parch"]
+    features = ["Pclass", "Sex", "SibSp", "Parch"]
 
     # Première fonction
     train_data, test_data = tel_data(train_test, test_test)
 
     # Deuxième fonction
-    train, test, train_submission = preprocess_data(train_data,
-                                                    test_data,
-                                                    features)
+    train, test, train_submission = preprocess_data(train_data, test_data, features)
 
     # Résultats
     print("\nDonnées train prétraitées :")
