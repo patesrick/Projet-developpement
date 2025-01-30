@@ -88,7 +88,7 @@ Projet-developpement/
 - **Dan SEBAG** :
   - Familiarisation avec les données de départ
   - Écriture et rédaction du rapport final
-  - Co-Écriture du README
+  - Co-Écriture du README (sur word)
   - Utilisation de GIT et structuration de GITHUB
 
 
