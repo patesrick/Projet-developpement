@@ -27,7 +27,7 @@ Comme dit précedemment, ce projet vise à prédire les chances de survie des pa
 ```plaintext
 Projet-developpement/
 |
-├── .github/                         # Dossier de la pipeline
+├── .github/worflows                 # Dossier de la pipeline
 │   ├── main.yml                     # Fichier de la pipeline
 │
 ├── docs/                            # Documentation principale
